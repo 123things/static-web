@@ -1,0 +1,29 @@
+/*
+    1.flex + flex-wrap + width
+    2.(1). 最小
+      (2). @media screen 分阶段
+*/
+.container{}
+.wrapper{}
+
+@media screen and (min-width: 576px){}
+@media screen and (min-width: 768px){}
+@media screen and (min-width: 992px){
+    .wrapper{
+        width: 100%;
+    }
+    header .header-title{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .wrapper{
+        width: 1140px;
+    }
+    header .header-title{
+        width: 48%;
+    }
+    header .logo{
+        width: 33%;
+    }
+}
